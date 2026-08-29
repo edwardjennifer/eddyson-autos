@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EDDYSON AUTOS | Premium automobiles, spare parts, and vehicle accessories. Luxury. Performance. Trust."
+    />
+    <title>EDDYSON AUTOS | Premium Vehicles & Automotive Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar Component ===== -->
+    <header class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="#top" class="navbar-brand">
+          <span class="brand-mark">E</span>
+          <span class="brand-text">EDDYSON AUTOS</span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#vehicles" class="nav-link">Vehicles</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== HeroSection Component ===== -->
+    <section class="hero" id="home">
+      <!-- HeroVideo -->
+      <div class="hero-video-container">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="none"
+          poster="assets/poster.jpg"
+          aria-label="Cinematic automotive showcase"
+        >
+          <source src="assets/videos/hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <!-- Ambient decorative motion -->
+      <div class="hero-ambient" aria-hidden="true">
+        <div class="ambient-particle ambient-particle-1"></div>
+        <div class="ambient-particle ambient-particle-2"></div>
+        <div class="ambient-particle ambient-particle-3"></div>
+        <div class="ambient-glow ambient-glow-1"></div>
+        <div class="ambient-glow ambient-glow-2"></div>
+        <div class="ambient-lines"></div>
+        <div class="ambient-streak"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <div class="hero-header fade-in-up">
+          <span class="hero-kicker">Premium Automotive Experience</span>
+          <h1 class="hero-title">EDDYSON AUTOS</h1>
+        </div>
+
+        <!-- TypewriterText -->
+        <div class="typewriter-container fade-in-up delay-1">
+          <div class="typewriter-wrapper">
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="typewriter-cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <p class="hero-description fade-in-up delay-2">
+          Premium vehicles. Exceptional value. A better way to buy your next automobile.
+        </p>
+
+        <!-- HeroButtons -->
+        <div class="hero-buttons fade-in-up delay-3">
+          <a href="#vehicles" class="btn btn-primary">
+            <span>Explore Vehicles</span>
+            <span class="btn-icon" aria-hidden="true">→</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Us</span>
+          </a>
+        </div>
+
+        <!-- AnimatedStats -->
+        <div class="hero-stats fade-in-up delay-4">
+          <div class="stat-item">
+            <span class="stat-number" data-target="30">0</span>
+            <span class="stat-label">+ Vehicles</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="6">0</span>
+            <span class="stat-label">Premium Brands</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-label-alt">Trusted Service</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ScrollIndicator -->
+      <a href="#vehicles" class="scroll-indicator fade-in delay-5" aria-label="Scroll to vehicles">
+        <span>SCROLL TO EXPLORE</span>
+        <span class="scroll-arrow">↓</span>
+      </a>
+
+      <!-- Hero transition into next section -->
+      <svg class="hero-curve" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M 0,50 Q 300,10 600,50 T 1200,50 L 1200,120 L 0,120 Z" fill="#0a0a0a"></path>
+      </svg>
+    </section>
+
+    <main>
+      <!-- ===== Glassmorphism Video Showcase ===== -->
+      <section class="showcase-section" id="showcase">
+      <div class="section-header">
+        <span class="section-kicker">THE EXPERIENCE</span>
+        <h2>Automotive Excellence In Motion</h2>
+      </div>
+
+      <div class="showcase-grid">
+        <article class="showcase-card">
+          <video
+            class="showcase-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="assets/night-drive-poster.jpg"
+            aria-label="Night drive cinematic loop"
+          >
+            <source src="assets/videos/night-drive.mp4" type="video/mp4" />
+          </video>
+          <div class="showcase-glass">
+            <span class="showcase-kicker">Night Drive</span>
+            <h3>Command The Dark</h3>
+            <p>Sweeping headlights and city lights streak past as premium vehicles glide through the night.</p>
+          </div>
+        </article>
+
+        <article class="showcase-card">
+          <video
+            class="showcase-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="assets/showroom-poster.jpg"
+            aria-label="Showroom spotlight cinematic loop"
+          >
+            <source src="assets/videos/showroom.mp4" type="video/mp4" />
+          </video>
+          <div class="showcase-glass">
+            <span class="showcase-kicker">Showroom Elegance</span>
+            <h3>Spotlight On Craft</h3>
+            <p>Warm gold light sweeps across polished bodywork, revealing every curve and detail.</p>
+          </div>
+        </article>
+
+        <article class="showcase-card">
+          <video
+            class="showcase-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="assets/precision-poster.jpg"
+            aria-label="Precision engineering cinematic loop"
+          >
+            <source src="assets/videos/precision.mp4" type="video/mp4" />
+          </video>
+          <div class="showcase-glass">
+            <span class="showcase-kicker">Precision Engineering</span>
+            <h3>Built For Performance</h3>
+            <p>Cool metallic reflections trace the lines of vehicles engineered for confidence and control.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+      <section class="about-section" id="about">
+        <div class="section-header">
+          <span class="section-kicker">ABOUT US</span>
+          <h2>Built Around The Love Of Automobiles</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              Eddyson Autos brings together premium vehicles, dependable spare parts, and
+              vehicle accessories for drivers and businesses that value quality, trust, and
+              performance. Through wholesale and retail service, we deliver a refined
+              automotive experience built around reliability and customer care.
+            </p>
+            <div class="about-stats">
+              <div class="about-stat">
+                <span class="about-stat-label">Quality</span>
+                <strong>Premium vehicle selection</strong>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-label">Wholesale</span>
+                <strong>Business &amp; bulk supply</strong>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-label">Retail</span>
+                <strong>Individual customers</strong>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat-label">Trust</span>
+                <strong>Customer-focused service</strong>
+              </div>
+            </div>
+          </div>
+          <div class="about-media">
+            <img
+              src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80"
+              alt="Luxury vehicle in showroom lighting"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Vehicles Section ===== -->
+      <section class="vehicles-section" id="vehicles">
+        <div class="section-header">
+          <span class="section-kicker">OUR COLLECTION</span>
+          <h2>Premium Vehicles For Every Journey</h2>
+        </div>
+
+        <div class="vehicles-grid" id="vehicle-grid">
+          <!-- Vehicles rendered by script.js -->
+        </div>
+      </section>
+
+      <!-- ===== Spare Parts Section ===== -->
+      <section class="parts-section" id="spare-parts">
+        <div class="section-header">
+          <span class="section-kicker">SPARE PARTS</span>
+          <h2>The Right Parts. The Right Fit.</h2>
+        </div>
+
+        <div class="parts-grid">
+          <article class="part-card"><span>01</span><h3>Engine Parts</h3></article>
+          <article class="part-card"><span>02</span><h3>Brake Components</h3></article>
+          <article class="part-card"><span>03</span><h3>Suspension</h3></article>
+          <article class="part-card"><span>04</span><h3>Electrical Components</h3></article>
+          <article class="part-card"><span>05</span><h3>Filters</h3></article>
+          <article class="part-card"><span>06</span><h3>Body Parts</h3></article>
+          <article class="part-card"><span>07</span><h3>Accessories</h3></article>
+          <article class="part-card"><span>08</span><h3>Tailored Supply</h3></article>
+        </div>
+      </section>
+
+      <!-- ===== Contact Section ===== -->
+      <section class="contact-section" id="contact">
+        <div class="section-header">
+          <span class="section-kicker">CONTACT EDDYSON AUTOS</span>
+          <h2>Make Your Next Move With Confidence</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <p>
+              Reach out for vehicle enquiries, spare parts requests, or wholesale
+              discussions. We are ready to help.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span>Email</span>
+                <a href="mailto:eddygsk2018@gmail.com">eddygsk2018@gmail.com</a>
+              </li>
+              <li>
+                <span>Phone</span>
+                <a href="tel:+2349157424129">+234 915 742 4129</a>
+              </li>
+              <li>
+                <span>WhatsApp</span>
+                <a href="https://wa.me/2349157424129" target="_blank" rel="noreferrer">Chat with us on WhatsApp</a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" action="mailto:eddygsk2018@gmail.com" method="post" enctype="text/plain">
+            <div class="field-row">
+              <label><span>Name</span><input type="text" name="name" placeholder="Your name" /></label>
+              <label><span>Email</span><input type="email" name="email" placeholder="Your email" /></label>
+            </div>
+            <div class="field-row">
+              <label><span>Phone</span><input type="tel" name="phone" placeholder="Your phone" /></label>
+              <label><span>Subject</span><input type="text" name="subject" placeholder="Enquiry type" /></label>
+            </div>
+            <label><span>Message</span><textarea name="message" rows="5" placeholder="Tell us what you need"></textarea></label>
+            <button type="submit" class="btn btn-primary"><span>Send Enquiry</span></button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EDDYSON AUTOS</h3>
+          <p>Premium automobiles and exceptional service.</p>
+          <div class="footer-socials">
+            <a href="https://wa.me/2349157424129" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="mailto:eddygsk2018@gmail.com">Email</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#vehicles">Vehicles</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#spare-parts">Spare Parts</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>Email: eddygsk2018@gmail.com</p>
+          <p>WhatsApp: <a href="https://wa.me/2349157424129" target="_blank" rel="noreferrer">Contact Us</a></p>
+          <p>Phone: +234 915 742 4129</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 EDDYSON AUTOS. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <a
+      class="floating-whatsapp"
+      href="https://wa.me/2349157424129"
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat with Eddyson Autos on WhatsApp"
+    >
+      Chat on WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
